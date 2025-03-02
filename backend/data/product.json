@@ -1,0 +1,129 @@
+{
+  "products": [
+    {
+      "name": "Sony Wireless Headphones",
+      "price": 199.99,
+      "description": "High-quality noise-canceling wireless headphones from Sony. Enjoy immersive sound with long battery life.",
+      "ratings": 4.8,
+      "images": [
+        {
+          "public_id": "headphones_1",
+          "url": "https://source.unsplash.com/600x400/?headphones"
+        }
+      ],
+      "category": "Headphones",
+      "seller": "Sony",
+      "stock": 10,
+      "numOfReviews": 5,
+      "reviews": [
+        {
+          "name": "Alice Johnson",
+          "rating": 5,
+          "comment": "Best headphones I've ever used!"
+        },
+        {
+          "name": "Mark Spencer",
+          "rating": 4,
+          "comment": "Great sound but a bit expensive."
+        }
+      ],
+      "createdAt": "2024-06-01T10:20:30.618Z"
+    },
+    {
+      "name": "MacBook Pro 14-inch",
+      "price": 1999.99,
+      "description": "Apple MacBook Pro 14-inch with M2 chip, Liquid Retina display, and long-lasting battery.",
+      "ratings": 4.9,
+      "images": [
+        {
+          "public_id": "laptop_1",
+          "url": "https://source.unsplash.com/600x400/?laptop"
+        }
+      ],
+      "category": "Laptop",
+      "seller": "Apple",
+      "stock": 8,
+      "numOfReviews": 12,
+      "reviews": [
+        {
+          "name": "Jake Thompson",
+          "rating": 5,
+          "comment": "Absolutely love it! Fast and reliable."
+        }
+      ],
+      "createdAt": "2024-06-10T08:50:00.618Z"
+    },
+    {
+      "name": "Canon EOS 90D DSLR Camera",
+      "price": 1299.99,
+      "description": "Capture high-quality images with the Canon EOS 90D featuring a 32.5MP sensor and 4K video recording.",
+      "ratings": 4.7,
+      "images": [
+        {
+          "public_id": "camera_1",
+          "url": "https://source.unsplash.com/600x400/?camera"
+        }
+      ],
+      "category": "Cameras",
+      "seller": "Canon",
+      "stock": 15,
+      "numOfReviews": 7,
+      "reviews": [
+        {
+          "name": "Sarah Green",
+          "rating": 4,
+          "comment": "Great camera for beginners and professionals alike."
+        }
+      ],
+      "createdAt": "2024-06-05T12:30:45.618Z"
+    },
+    {
+      "name": "Nike Air Max Sneakers",
+      "price": 119.99,
+      "description": "Comfortable and stylish Nike Air Max sneakers perfect for sports and casual wear.",
+      "ratings": 4.5,
+      "images": [
+        {
+          "public_id": "shoes_1",
+          "url": "https://source.unsplash.com/600x400/?sneakers"
+        }
+      ],
+      "category": "Clothes/Shoes",
+      "seller": "Nike",
+      "stock": 20,
+      "numOfReviews": 14,
+      "reviews": [
+        {
+          "name": "Chris Evans",
+          "rating": 5,
+          "comment": "Super comfortable and stylish!"
+        }
+      ],
+      "createdAt": "2024-06-15T09:10:00.618Z"
+    },
+    {
+      "name": "Gaming Mouse RGB",
+      "price": 49.99,
+      "description": "Ergonomic gaming mouse with customizable RGB lighting and programmable buttons.",
+      "ratings": 4.6,
+      "images": [
+        {
+          "public_id": "mouse_1",
+          "url": "https://source.unsplash.com/600x400/?mouse"
+        }
+      ],
+      "category": "Accessories",
+      "seller": "Logitech",
+      "stock": 25,
+      "numOfReviews": 9,
+      "reviews": [
+        {
+          "name": "Daniel Smith",
+          "rating": 5,
+          "comment": "Works flawlessly with my gaming setup."
+        }
+      ],
+      "createdAt": "2024-06-20T11:00:30.618Z"
+    }
+  ]
+}

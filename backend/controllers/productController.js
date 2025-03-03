@@ -10,10 +10,14 @@ exports.newProduct = async (req, res, next) => {
   })
 }
 
+// Get all products => /api/v1/product
+exports.getProduct = async (req, res, next) => {
 
-exports.getProduct = (req, res, next) => {
+  const product = await Product.find()
+
   res.status(200).json({
     success: true,
-    message: 'Fetched products successfully'
+    count: product.length,
+    product
   })
 }

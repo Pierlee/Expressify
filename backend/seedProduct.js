@@ -7,8 +7,8 @@ const Product = require('./models/productModel');
 dotenv.config(); // Load environment variables
 
 // Read JSON file
-const rawData = fs.readFileSync('./data/products.json');
-const jsonData = JSON.parse(rawData).products;
+const rawData = fs.readFileSync('./data/product.json');
+const jsonData = JSON.parse(rawData).product;
 
 // Function to map JSON data to match Mongoose schema
 const mapToProductModel = (sampleProduct) => ({
@@ -46,8 +46,8 @@ const seedDatabase = async () => {
     await Product.deleteMany(); // Clear the collection
 
     console.log('⏳ Inserting new products...');
-    const formattedProducts = jsonData.map(mapToProductModel);
-    await Product.insertMany(formattedProducts);
+    const formattedProduct = jsonData.map(mapToProductModel);
+    await Product.insertMany(formattedProduct);
 
     console.log('✅ Database seeded successfully!');
     mongoose.disconnect();

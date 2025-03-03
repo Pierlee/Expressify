@@ -11,7 +11,7 @@ exports.newProduct = async (req, res, next) => {
 }
 
 
-exports.getProducts = (req, res, next) => {
+exports.getProduct = (req, res, next) => {
   res.status(200).json({
     success: true,
     message: 'Fetched products successfully'

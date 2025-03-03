@@ -4,8 +4,8 @@ const app = express()
 app.use(express.json())
 
 //Import all routes
-const products = require('./routes/product')
+const product = require('./routes/product')
 
 //any route defined in routes/product.js will be prefixed with /api/v1
-app.use('/api/v1', products)
+app.use('/api/v1', product)
 module.exports = app

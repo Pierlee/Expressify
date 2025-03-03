@@ -1,5 +1,5 @@
 {
-  "product": [
+  "products": [
     {
       "name": "Sony Wireless Headphones",
       "price": 199.99,
@@ -20,11 +20,6 @@
           "name": "Alice Johnson",
           "rating": 5,
           "comment": "Best headphones I've ever used!"
-        },
-        {
-          "name": "Mark Spencer",
-          "rating": 4,
-          "comment": "Great sound but a bit expensive."
         }
       ],
       "createdAt": "2024-06-01T10:20:30.618Z"

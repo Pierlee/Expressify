@@ -17,7 +17,9 @@ exports.newProduct = catchAsyncErrors (async (req, res, next) => {
 // Get all products => /api/v1/product?keywork=apple
 exports.getProduct = catchAsyncErrors (async (req, res, next) => {
   const apiFeatures = new APIFeatures(Product.find(), req.query)
-                      .search()
+    .search()
+    .filter()
+    
   const product = await apiFeatures.query
 
   res.status(200).json({

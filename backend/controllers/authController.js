@@ -17,13 +17,7 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
     }
   });
 
-  const token = user.getJWTToken();
-
-
-  res.status(201).json({
-    success: true,
-    token
-  });
+  sendToken(user, 200, res);
 });
 
 // 🔹 Login User → /api/v1/auth/login
@@ -48,12 +42,7 @@ exports.loginUser = catchAsyncErrors(async (req, res, next) => {
     return next(new ErrorHandler("Invalid email or password", 401));
   }
 
-  const token = user.getJwtToken()
-
-  res.status(200).json({
-    success: true,
-    token
-  });
+  sendToken(user, 200, res);
 });
 
 // 🔹 Get User Profile → /api/v1/auth/me

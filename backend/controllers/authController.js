@@ -45,6 +45,20 @@ exports.loginUser = catchAsyncErrors(async (req, res, next) => {
   sendToken(user, 200, res);
 });
 
+// �� Logout User → /api/v1/auth/logout
+  exports.logout = catchAsyncErrors(async (req, res, next) => {
+    res.cookie('token', null, { 
+      expires: new Date.now(),
+      httpOnly: true,
+    });
+
+    res.status(200).json({ 
+      success: true, 
+      message: 'Logged out' 
+    });
+  });
+
+  // �� Forgot Password → /api/v1/auth/forgotpassword
 // 🔹 Get User Profile → /api/v1/auth/me
 // exports.getUserProfile = catchAsyncErrors(async (req, res, next) => {
 //   const user = await User.findById(req.user.id);
